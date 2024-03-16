@@ -1,8 +1,9 @@
 <script setup>
 import Layout from '@/Layouts/Layout.vue';
 import SlideBanner from '@/Components/SlideBanner.vue';
-import SlideFormacoes from '@/Components/SlideFormacoes.vue';
+import SectionFormacoes from '@/Components/SectionFormacoes.vue';
 import InfoCards from '@/Components/InfoCards.vue';
+import SectionMediaHomePage from '@/Components/SectionMediaHomePage.vue';
 
 defineProps({
     canLogin: Boolean,
@@ -26,7 +27,7 @@ defineProps({
         <SlideBanner />
         <div class="bg-white px-12"> 
             <div class="flex text-center w-full justify-center items-center p-12 flex-col">
-            <h3 class="md:text-2xl text-xl">ABRATEF</h3>
+            <h3 class="md:text-2xl text-xl">APORTEFAC</h3>
             <p class="lg:w-1/2 md:w-full w-full md:normal-case text-justify md:text-center"> é uma Organização da Sociedade Civil (OSC), fundada em 1994, sem fins lucrativos e econômicos, de interesse público, apartidária e de âmbito nacional.</p>
             </div>
             <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
@@ -50,12 +51,13 @@ defineProps({
                 </div>
             </div>
             <div class="py-12">
-               <div class="">
-                <h3 class="w-2/3 border-b-2 border-solid border-black text-2xl ">Principais Formações</h3>
-               </div>
-               <SlideFormacoes />
+               <SectionFormacoes />
+            </div>
+
+            <div>
+                <SectionMediaHomePage />
             </div>
         </div>
     </Layout>
-</template>import SlideFormacoesVue from '@/Components/SlideFormacoes.vue';
+</template>
 
